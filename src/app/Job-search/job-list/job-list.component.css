@@ -1,0 +1,19 @@
+.container{
+    padding-left: 40px;
+    height: 100vw;
+  
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.icon-star.active {
+    color: yellow;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+

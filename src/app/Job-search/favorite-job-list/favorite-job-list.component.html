@@ -1,0 +1,20 @@
+<div class="container" *ngIf="isFavorite">
+    <div *ngFor="let job of favoriteJobList">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="{{job.companyLogo}}" alt="logo"/>
+            </div>
+            <div class="col-sm-8">
+                <a class="cursor jobTitle" (click)="jobDetail(job)"> {{job.title}}</a>
+                <div class="description"> 
+                    Company : {{job.companyName}}  Reference : {{job.reference}}
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isFavorite">
+    <div class="noFavjob">{{noFaviorateJob}}</div>
+</div>
+     

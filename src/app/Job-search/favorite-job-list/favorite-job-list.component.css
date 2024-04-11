@@ -1,0 +1,13 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    padding-left: 40px;
+}
+
+.noFavjob{       
+    text-align: center;
+    padding-top: 50px;
+}

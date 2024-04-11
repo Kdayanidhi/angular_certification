@@ -1,0 +1,22 @@
+<div class="container" *ngIf="totalJobAvailable">
+    <div *ngFor="let job of totalJobAvailable">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="{{job.companyLogo}}" alt="Logo"/>
+            </div>
+            <div class="col-sm-7">
+                <a class="cursor" (click)="jobDetail(job)">
+                    <span class="jobTitle">{{job.title}}</span>
+                </a>
+                <div>
+                    <span class="description"> Company : {{job.companyName}} Reference : {{job.reference}}</span>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="icon-star" [ngClass]="{'active':job.isFavorite}" (click)="onFavoriteClick(job)"
+                    id="star-{{job.id}}"></span>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

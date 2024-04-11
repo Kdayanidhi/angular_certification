@@ -1,0 +1,26 @@
+.mainContainer {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(167, 167, 181);
+}
+
+.pageHeading {
+    text-align: center;
+    color: rgb(53, 54, 55);
+}
+
+.tabList {
+   display: flex;   
+   justify-content: space-around;
+   overflow: hidden;  
+}
+
+.tab {
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;  
+}
+
+
+
+  

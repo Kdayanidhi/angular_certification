@@ -1,0 +1,10 @@
+<div class="mainContainer">
+    <div class="pageHeading">
+        <h1>{{pageName}}</h1>
+    </div>
+    <div class="tabList">
+        <button class="tab" (click)="onTabClick('jobLists')">JOBS</button>
+        <button class="tab" (click)="onTabClick('favoritesJob')">FAVORITES</button>
+    </div>  
+    <router-outlet></router-outlet>
+</div>
